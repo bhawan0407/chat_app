@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ChatApp</title>
+    <title>AlphaChat</title>
     <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -17,6 +17,7 @@
       </div>
     </div>
     <div class="ui container">
+      <%= render 'layouts/messages' %>
       <%= yield %>
     </div>
   </body>
